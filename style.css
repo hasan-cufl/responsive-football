@@ -1,0 +1,99 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif; 
+    align-items: center; 
+}
+.full-width{
+    padding:0 110px;
+    display: flex;
+    justify-content: space-around;
+}
+.banner{
+    background-color: rgba(45, 37, 160, 1);
+}
+.banner-title{
+    font-size: 64px;
+}
+.half-width img{
+    width: 556px;
+}
+button{
+    
+}
+.live-show{
+    width: 168px;
+    height: 44px;
+    background-color: rgba(224, 44, 109, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.white-text,.fa-arrow-right{
+    color: white;
+}
+.banner-image{
+    transition: transform .1s;
+}
+.banner-image:hover{
+    transform: skew(-20deg);
+    transform-origin: top right;
+}
+.player-container{
+    margin-top: 85px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    grid-gap: 30px;
+    justify-content: center;
+}
+.player{
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 20px 20px rgb(177, 174, 174);
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+
+/* footer styles */
+
+/* .footer-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.footer-container{
+    margin-top: 158px;
+    text-align: center;
+}
+
+/* ----------------
+---Mobile devices--
+-------------------*/
+
+@media only screen and (max-width:688px) {
+    .full-width{
+        flex-direction: column;
+        padding: 50px;
+        
+    }
+    .half-width{
+        padding: 20px 0;
+    }
+    .half-width img{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .players img{
+        width: 100%;
+    }
+    footer img{
+        width: 80%;
+    }
+}
